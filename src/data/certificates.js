@@ -1,6 +1,6 @@
 const certificates = [
   {
-    title: 'Web Development Bootcamp',
+    title: 'Programming Fundamentals',
     issuer: 'Udemy',
     year: '2025',
     link: 'https://udemy.com/certificate/sample-link'

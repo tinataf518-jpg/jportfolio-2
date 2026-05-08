@@ -21,7 +21,7 @@ function Navbar({ theme, setTheme }) {
   return (
     <header className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner">
-        <a className="brand" href="#home">YourName</a>
+        <a className="brand" href="#home">Yoseph</a>
         <nav className="nav-links">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href}>{link.label}</a>
