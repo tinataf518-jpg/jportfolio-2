@@ -11,7 +11,7 @@ import projects from './data/projects.js';
 import certificates from './data/certificates.js';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   useEffect(() => {
     document.documentElement.dataset.theme = theme;
@@ -23,30 +23,33 @@ function App() {
 
       <main className="page-content">
         <section id="home" className="hero-section">
-          <div className="hero-copy">
-            <p className="eyebrow">Hello, I'm</p>
-            <h1>Yoseph Tadesse</h1>
-            <p className="hero-title">Computer Science Student</p>
-            <p className="hero-description">
+          <div className="hero-grid-wrapper">
+            <div className="hero-copy">
+              <p className="eyebrow">Hello, I'm</p>
+              <h1>Yoseph Tadesse</h1>
+              <p className="hero-title">Computer Science Student</p>
+              <p className="hero-description">
 I am a frontend developer focused on React, Tailwind CSS, and TypeScript.
 I build modern, scalable, and responsive web applications with clean UI/UX design.
 Currently, I am growing into full-stack development with Node.js, Express, and databases to develop complete production-ready applications.
-            </p>
-            <a href="#projects" className="primary-button">View Projects</a>
-          </div>
+              </p>
+              <a href="#projects" className="primary-button">View Projects</a>
+            </div>
 
-          <div className="hero-side">
-            <ProfilePhoto src="/profile-photo.jpg" alt="Yoseph Tadesse profile photo" />
-            <div className="hero-card">
-              <div className="hero-card-inner">
-                <h2>About Me</h2>
-                <p>
-                  I’m a web developer who enjoys turning ideas into interactive, living products on the web. I build responsive and performance-focused applications where design feels intuitive and functionality feels effortless. I like bridging the gap between creativity and logic—crafting clean user interfaces backed by reliable systems. Always experimenting, learning, and refining, I treat every project as a chance to build something smarter, smoother, and more meaningful than the last.
-                </p>
-              </div>
+            <div className="hero-side">
+              <ProfilePhoto src="/profile-photo.jpg" alt="Yoseph Tadesse profile photo" />
             </div>
           </div>
         </section>
+
+        <div className="hero-card">
+          <div className="hero-card-inner">
+            <h2>About Me</h2>
+            <p>
+              I'm a web developer who enjoys turning ideas into interactive, living products on the web. I build responsive and performance-focused applications where design feels intuitive and functionality feels effortless. I like bridging the gap between creativity and logic—crafting clean user interfaces backed by reliable systems. Always experimenting, learning, and refining, I treat every project as a chance to build something smarter, smoother, and more meaningful than the last.
+            </p>
+          </div>
+        </div>
 
         <section id="about" className="section-block">
           <SectionTitle title="About" subtitle="A quick introduction" />
