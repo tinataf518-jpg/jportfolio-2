@@ -1,38 +1,38 @@
 const projects = [
   {
-    title: 'Movie App',
-    description: 'A responsive frontend movie application with modern UI, featuring movie search, details view, and interactive interface built with React.',
-    technologies: ['React', 'JavaScript', 'CSS', 'REST API'],
-    github: 'https://github.com/yourusername/movie-app',
-    demo: 'https://movie-app-demo.netlify.app'
-  },
-  {
-    title: 'Student Management System',
-    description: 'A responsive frontend application for managing student data with clean UI components and intuitive user experience.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    github: 'https://github.com/yourusername/student-management',
-    demo: 'https://student-system.netlify.app'
-  },
-  {
-    title: 'Task Manager App',
-    description: 'An interactive task management interface with add, edit, and delete functionality, featuring responsive design and smooth animations.',
-    technologies: ['React', 'JavaScript', 'CSS'],
-    github: 'https://github.com/yourusername/task-manager',
-    demo: 'https://task-manager.netlify.app'
-  },
-  {
-    title: 'E-commerce UI',
-    description: 'A modern e-commerce frontend with responsive product layouts, filtering capabilities, and clean component-based architecture.',
-    technologies: ['React', 'CSS', 'JavaScript'],
+    title: 'E-Commerce Frontend UI',
+    description: 'Modern product listing UI with product details, cart interface, filtering, and responsive design built with Next.js and Tailwind CSS.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
     github: 'https://github.com/yourusername/ecommerce-ui',
-    demo: 'https://ecommerce-ui.netlify.app'
+    demo: 'https://ecommerce-ui-demo.vercel.app'
   },
   {
-    title: 'Portfolio Website',
-    description: 'A responsive portfolio website showcasing frontend development skills with modern design and smooth user interactions.',
-    technologies: ['React', 'CSS'],
-    github: 'https://github.com/yourusername/portfolio',
-    demo: 'https://your-portfolio.netlify.app'
+    title: 'SaaS Analytics Dashboard',
+    description: 'Analytics dashboard with sidebar navigation, stat cards, charts UI, and table components featuring dark mode support.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/yourusername/analytics-dashboard',
+    demo: 'https://analytics-dashboard-demo.vercel.app'
+  },
+  {
+    title: 'Movie Search App',
+    description: 'Movie search application with grid layout, detail pages, loading skeletons, and Netflix-style UI using TMDB API.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/yourusername/movie-search',
+    demo: 'https://movie-search-demo.vercel.app'
+  },
+  {
+    title: 'AI Chat UI',
+    description: 'Chat interface with message bubbles, input box, typing animations, and ChatGPT-style layout for AI conversations.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/yourusername/ai-chat-ui',
+    demo: 'https://ai-chat-ui-demo.vercel.app'
+  },
+  {
+    title: 'Developer Project Gallery',
+    description: 'Project gallery with grid layout, category filtering, hover animations, and modal detail views for developer portfolios.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: 'https://github.com/yourusername/project-gallery',
+    demo: 'https://project-gallery-demo.vercel.app'
   }
 ];
 

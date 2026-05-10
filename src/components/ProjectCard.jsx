@@ -1,6 +1,6 @@
 function ProjectCard({ project }) {
   return (
-    <article className="project-card">
+    <article className="project-card glass-card">
       <div className="project-card-head">
         <h3>{project.title}</h3>
       </div>
