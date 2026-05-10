@@ -38,6 +38,40 @@ const skillIcons = {
       <path d="M44 40h40v10H54v20h22v10H54v25H44V40zm45 0h19v10H89v5h9v10h-9v20h11v10H89v15H79V40h10z" fill="#fff"/>
     </svg>
   ),
+  'Next.js': (
+    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#000"/>
+      <path d="M46 38h-8v52h10V74.5L82 90.5V38h-8v36.7L46 38z" fill="#fff"/>
+    </svg>
+  ),
+  'Tailwind CSS': (
+    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#06B6D4"/>
+      <path fill="#fff" d="M38 66c14 0 18-8 30-8 6 0 10 3 10 8 0 13-18 20-28 20-12 0-18-6-20-10v-10zm0 22c14 0 18-8 30-8 6 0 10 3 10 8 0 13-18 20-28 20-12 0-18-6-20-10v-10z"/>
+    </svg>
+  ),
+  'VS Code': (
+    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#0078D4"/>
+      <path d="M34 36l30 24-30 24V36zm40 2l18 12-18 12V38zm0 52l18 12-18 12V90z" fill="#00BCF2"/>
+    </svg>
+  ),
+  Vercel: (
+    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#000"/>
+      <path d="M32 92h64L64 36 32 92z" fill="#fff"/>
+    </svg>
+  ),
+  Figma: (
+    <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+      <rect width="128" height="128" rx="24" fill="#0A0A0A"/>
+      <path d="M64 34a14 14 0 1 0 0 28 14 14 0 0 0 0-28z" fill="#F24E1E"/>
+      <path d="M64 62a14 14 0 1 0 0 28 14 14 0 0 0 0-28z" fill="#A259FF"/>
+      <path d="M64 90a14 14 0 1 0 0 28 14 14 0 0 0 0-28z" fill="#1ABCFE"/>
+      <path d="M42 62a14 14 0 1 0 0 28 14 14 0 0 0 0-28z" fill="#0ACF83"/>
+      <path d="M86 62a14 14 0 1 0 0 28 14 14 0 0 0 0-28z" fill="#FF7262"/>
+    </svg>
+  ),
   'Node.js': (
     <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
       <path d="M64 4L14 26v76l50 22 50-22V26L64 4z" fill="#83CD29"/>

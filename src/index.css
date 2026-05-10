@@ -289,6 +289,12 @@ button {
   color: var(--text-muted);
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .primary-button {
   display: inline-flex;
   align-items: center;
@@ -305,6 +311,25 @@ button {
 .primary-button:hover {
   transform: translateY(-1px);
   background: var(--button-hover);
+}
+
+.secondary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  color: var(--button);
+  border: 1px solid var(--button);
+  border-radius: 999px;
+  padding: 0.95rem 1.6rem;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  margin-left: 1rem;
+}
+
+.secondary-button:hover {
+  transform: translateY(-1px);
+  background: var(--button);
+  color: white;
 }
 
 
@@ -387,8 +412,11 @@ button {
 .projects-grid,
 .certificates-grid,
 .skills-grid {
-  display: grid;
   gap: 1.5rem;
+}
+
+.project-carousel {
+  position: relative;
 }
 
 .projects-grid {
@@ -398,6 +426,74 @@ button {
   padding-bottom: 0.5rem;
   scroll-snap-type: x mandatory;
   scroll-padding: 1.5rem;
+  align-items: stretch;
+}
+
+.project-carousel::before,
+.project-carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2.5rem;
+  pointer-events: none;
+}
+
+.project-carousel::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--background) 0%, rgba(255,255,255,0) 100%);
+}
+
+.project-carousel::after {
+  right: 0;
+  background: linear-gradient(270deg, var(--background) 0%, rgba(255,255,255,0) 100%);
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.6rem;
+  height: 2.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+  z-index: 2;
+}
+
+.carousel-button:hover {
+  transform: translateY(-50%) scale(1.04);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.12);
+}
+
+.carousel-button-left {
+  left: -1rem;
+}
+
+.carousel-button-right {
+  right: -1rem;
+}
+
+@media (max-width: 900px) {
+  .carousel-button-left {
+    left: 0.25rem;
+  }
+
+  .carousel-button-right {
+    right: 0.25rem;
+  }
+
+  .project-carousel::before,
+  .project-carousel::after {
+    display: none;
+  }
 }
 
 .projects-grid::-webkit-scrollbar {
@@ -423,9 +519,24 @@ button {
 }
 
 .project-card {
-  min-width: 360px;
+  min-width: 340px;
+  max-width: 360px;
   flex: 0 0 auto;
   scroll-snap-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 380px;
+}
+
+.project-card p {
+  flex: 1;
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.project-actions {
+  margin-top: 1.5rem;
 }
 
 [data-theme='dark'] .project-card,
