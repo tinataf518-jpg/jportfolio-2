@@ -32,3 +32,4 @@ function ProjectCard({ project }) {
 }
 
 export default ProjectCard;
+// Updated: commit 2
