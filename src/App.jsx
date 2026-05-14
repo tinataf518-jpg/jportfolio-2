@@ -7,6 +7,7 @@ import ContactForm from './components/ContactForm.jsx';
 import ProfilePhoto from './components/ProfilePhoto.jsx';
 import Footer from './components/Footer.jsx';
 import projects from './data/projects.js';
+import joeyPhoto from './assets/Joey.jpg';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -47,7 +48,7 @@ function App() {
             </div>
 
             <div className="hero-side">
-              <ProfilePhoto src="/profile-photo.jpg" alt="Yoseph Tadesse profile photo" />
+              <ProfilePhoto src={joeyPhoto} alt="Yoseph Tadesse profile photo" />
             </div>
           </div>
         </section>
@@ -61,27 +62,7 @@ function App() {
           </div>
         </div>
 
-        <section id="about" className="section-block">
-          <SectionTitle title="About" subtitle="A quick introduction" />
-          <div className="content-grid about-grid">
-            <div>
-              <p>
-                I am a Computer Science student at Bahir Dar University with a strong passion for frontend development. I specialize in building responsive and modern web applications using React and Next.js, focusing on clean UI/UX design and component-based architecture.
-              </p>
-              <p>
-                My expertise lies in creating intuitive user interfaces, implementing responsive layouts, and ensuring smooth user experiences across all devices. I enjoy solving complex UI challenges and continuously learning new frontend technologies to deliver high-quality, performant applications.
-              </p>
-            </div>
-            <div className="info-card">
-              <h3>Education & Focus</h3>
-              <ul>
-                <li>BSc in Computer Science, Bahir Dar University</li>
-                <li>Specialized in React and Next.js development</li>
-                <li>Passionate about responsive design and clean user experiences</li>
-              </ul>
-            </div>
-          </div>
-        </section>
+
 
         <section id="projects" className="section-block">
           <SectionTitle title="Projects" subtitle="Recent work" />
